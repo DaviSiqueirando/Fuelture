@@ -66,61 +66,42 @@
   
 
     <!-- Conteúdo do site após a NAVBAR -->
-    <div class="container-fluid align bg-light py-4" style="text-align: center; ">
-        <h1 class="display-3">Contate-nos</h1>
-        <p class="lead">
-        Está interessado no projeto e quer aderir-lo em seu posto de abastecimento? Envie seu formulário de contato, preencha os campos e então
-        responderemos em breve!
-        </p>
-      <!-- DIV RESPONSÁVEL PELO QUADRADO CONTENTO CONTAINERS -->
-      <div class="container-fluid d-flex justify-content-center py-5 ">
-        <div class="d-flex justify-content-center bg-dark text-light px-5 py-3 mb-5 col-sm-12 col-lg-6" style="border-radius:  3rem;">
-        <form class="">
-            <div class="form-row">
-            <div class="row">
-                <!-- INPUT DE EMAIL-->
-                <div class="container-fluid col-sm-7 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input id="textfield" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Ex: email@gmail.com">
-                </div>
-                <!-- INPUT DE SENHA -->
-                <div class="container-fluid col-sm-5">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input id="textfield" type="password" class="form-control">
-                </div>
-                <!-- INPUT DE ENDEREÇO -->
-                <div class="container-fluid col-md-8" style="height: 100px;">
-                  <label for="exampleInputtext" class="form-label">Endereço 1</label>
-                  <input id="textfield" type="text" class="form-control" placeholder="Ex: Rua Marechal Santos, Roraima">
-                </div>
-                <!-- INPUT DE Número do ENDEREÇO -->
-                <div class="container-fluid col-md-4" style="height: 100px;">
-                  <label for="exampleInputtext" class="form-label">N. de Endereço</label>
-                  <input id="textfield" type="text" class="form-control" placeholder="Ex: 121">
-                </div>
-                <div class="container-fluid col-md-4" style="height: 100px;">
-                  <label for="exampleInputtext" class="form-label">Número de Telefone</label>
-                  <input id="textfield" type="text" class="form-control">
-                </div>
-                <div class="container-fluid col-md-4" style="height: 100px;">
-                  <label for="exampleInputtext" class="form-label">CEP</label>
-                  <input id="textfield" type="text" class="form-control">
-                </div>
-              </div>
-              
-            <!-- VERIFICAÇÃO -->
-            <div class="container-fluid col-sm-1 form-check py-3">
-                <input id="checkbox" type="checkbox" class="form-check-input bg-dark">
-                <label class="form-check-label" for="exampleCheck1">Verificar</label>
-                </div>
-            <!-- BOTÃO PARA ENVIAR / SUBMETER CONTEÚDO -->
-            <div class="container-fluid col-sm-11">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
+ <div class="contact-form mt-5">
+                        <form class="row g-3 justify-content-center" action="cad.php" method="post">
+        
+                            <div class="col-md-5 col-sm-10 col-12">
+                                
+                                <input type="text" name="nome" class="form-control custom-input custom-border bg-transparent rounded 1"
+                                id="inputFirstName" placeholder="Nome">
+                            </div>
+                            
+                            <div class="col-md-5 col-sm-10 col-12">
+                               
+                                <input type="text" name="sobrenome" class="form-control custom-input custom-border bg-transparent rounded 1"
+                                id="inputLastName" placeholder="Sobrenome">
+                            </div>
+        
+                            <div class="col-md-5 col-sm-10 col-12">
+                                <input type="email" name="email" class="form-control custom-input custom-border bg-transparent rounded 1"
+                                id="inputEmailAddress" placeholder="Endereço de E-mail">
+                            </div>
+        
+                            <div class="col-md-5 col-sm-10 col-12">
+                                <input type="number" name="numero" class="form-control custom-input custom-border bg-transparent rounded 1"
+                                id="inputPhoneNumber" placeholder="Número de Telefone">
+                            </div>
+                            
+                            <div class="col-sm-10 col-12">
+                                <textarea type="textarea" name="mensagem" class="form-control custom-textarea custom-border bg-transparent rounded 1"
+                                id="inputTextarea" rows="5" placeholder="Digite aqui sua mensagem..."></textarea>
+                            </div>
+        
+                            <div class="d-grid col-sm-10 col-12 mt-4">
+                                <button type="submit" value="Enviar" class="primary-button full-width"> Enviar Mensagem</button>
+                            </div>
+                            
+                        </form>
+                    </div> 
 
      <!--ÍCONES DE REDES SOCIAIS-->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
